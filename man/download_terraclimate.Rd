@@ -2,12 +2,15 @@
 % Please edit documentation in R/download_terraclimate.R
 \name{download_terraclimate}
 \alias{download_terraclimate}
-\title{Download of reference evapotranspiration (eto) and rainfall (ppt) from 'TerraClimate'}
+\title{Download of reference evapotranspiration (eto) and rainfall (ppt) from 'TerraClimate'
+\if{html}{\figure{logo_cropDemand.png}{options: height= 300 width=auto style = float:right alt= Our logo}}}
 \usage{
-download_terraclimate(variable, years, region, sub_region)
+download_terraclimate(dir_out, variable, years, region, sub_region)
 }
 \arguments{
-\item{variable}{variable to download. This function will download the eto or ppt (Rasterstack).}
+\item{dir_out}{Directory where you want to save the raster images that you are goind to download.}
+
+\item{variable}{Variable to download. This function will download the eto or ppt (Rasterstack).}
 
 \item{years}{The period in years that the function should download images.}
 
@@ -16,7 +19,7 @@ download_terraclimate(variable, years, region, sub_region)
 \item{sub_region}{You have two options in this section, if you choice the brazil (in region parameter) you need to choice the Brazilian states, but if you choice the biomes_brazil (in region parameter) you must choice one of Brazilian biomes.}
 }
 \value{
-Load the ppt (Rainfall) or eto (reference evapotranspiration) rasterstack
+Download for the region of interest the ppt (Rainfall) or eto (reference evapotranspiration) rasterstack
 }
 \description{
 This function will download the eto and ppt and will load a rasterstack according to the the region of interest (Region and sub_region).
