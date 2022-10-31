@@ -1,5 +1,4 @@
 #' Calibration of rainfall (ppt) of 'TerraClimate'
-#' \if{html}{\figure{logo_cropDemand.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
 #'
 #' @description This fuction will calibrate the rainfall (ppt) from TerraClimate dataset based in the relationship with observed weather stations data.
 #' @param ppt_stack stack of ppt.
@@ -20,7 +19,6 @@ ppt_calibration<-function(slope, intercept, ppt_stack){
   return(ppt_calibrated)}
 
 #' Calibration of reference evapotranspiration (eto) of 'TerraClimate'
-#'\if{html}{\figure{logo_cropDemand.png}{options: height= 300 width=auto style = float:right alt= Our logo}}
 #'
 #' @description This function will calibrate the reference evapotranspiration (eto) from TerraClimate dataset based in the relationship with observed weather stations data.
 #' @param eto_stack stack of eto.
